@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Napredni selektori</title>
+    <style>
+a[target="_blank"] {color: green;}
+a[target="_self"]  {color: red;}
+#new::after {
+    content: "-NEW";
+    color: yellow;
+}
+
+
+#paragraph-red:focus {color: red;}
+#blue:focus {color: blue;}
+#tenth:hover {font-style: italic;}
+
+    </style>
+</head>
+<body>
+    <p>Paragraph 1</p>
+    <a href="https://www.google.com" target="_blank">Google</a>
+    <a href="https://www.google.com/doodles" target="_blank">Google Doodles</a>
+    <a href="https://www.link-group.com" target="_self">Link Group</a>
+    <div id="first-div">
+        <h2>Subheading</h2>
+        <p id="new">Paragraph 2</p>
+        <p id="new">Paragraph 3</p>
+    </div>
+<div id="second-div"></div>
+   <h3>Sub subheading</h3>
+
+        <p id="paragraph-red" tabindex="1">Paragraph 4</p>
+        <p id="blue" tabindex="2">Paragraph 5</p>
+        <p id="paragraph-red" tabindex="3">Paragraph 6</p>
+        <p>Paragraph 7</p>
+        <p>Paragraph 8</p>
+        <p>Paragraph 9</p>
+        <p id="tenth">Paragraph 10</p>
+    </div>
+    
+</body>
+</html>
